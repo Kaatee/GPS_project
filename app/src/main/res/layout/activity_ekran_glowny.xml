@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.introtoandroid.gps.EkranGlowny">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="283dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/srodki_transportu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="283dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="31dp"
+        android:text="Wybierz srodek transportu"
+        android:textSize="18sp"
+        android:textColor="#080808"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="130dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="32dp"
+        android:text="Start"
+        android:background="#fdb2f5aa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="130dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:text="Pauza"
+        android:background="#ff9090"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="283dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="61dp"
+        android:layout_marginStart="51dp"
+        android:text="zakoncz Aktywnosc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Chronometer
+        android:id="@+id/chronometer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="63dp"
+        android:format='"Czas: %s"'
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="286dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:text="sprawdzenie"
+        app:layout_constraintTop_toBottomOf="@+id/chronometer2"
+        tools:layout_editor_absoluteX="51dp" />
+
+</android.support.constraint.ConstraintLayout>
